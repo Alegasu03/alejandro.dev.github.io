@@ -1,40 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Portfolio</title>
-    <link rel="stylesheet" href="https://path-to-jekyll-theme.css">
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Professional Title (e.g., Web Developer, Designer)</p>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Alejandro, desarrollador web con proyectos de automatización, productividad y datos."
+    />
+    <title>Alejandro | Portfolio Web</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="badge">Disponible para nuevos proyectos</p>
+        <h1>Alejandro</h1>
+        <p class="subtitle">Desarrollador Web · Apps útiles para personas y equipos</p>
+        <nav aria-label="Redes y enlaces principales" class="quick-links">
+          <a href="https://github.com/Alegasu03" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/alejandro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="#proyectos">Ver proyectos</a>
+        </nav>
+      </div>
     </header>
-    <section id="personal-data">
-        <h2>Personal Data</h2>
-        <p>Brief introduction about yourself.</p>
-        <p>Email: your.email@example.com</p>
-        <p>Location: Your City, Your Country</p>
-    </section>
-    <section id="featured-projects">
-        <h2>Featured Projects</h2>
-        <ul>
-            <li><strong>GestorCuentas:</strong> Description of the project.</li>
-            <li><strong>TaskManager:</strong> Description of the project.</li>
-            <li><strong>AlertasClimatologicas:</strong> Description of the project.</li>
+
+    <main>
+      <section id="sobre-mi" class="container section">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy desarrollador web y disfruto creando productos claros, rápidos y útiles.
+          Me enfoco en interfaces sencillas, buena experiencia de usuario y código
+          mantenible.
+        </p>
+        <ul class="info-list">
+          <li><strong>Email:</strong> <a href="mailto:alejandro@example.com">alejandro@example.com</a></li>
+          <li><strong>Ubicación:</strong> España</li>
+          <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Git</li>
         </ul>
-    </section>
-    <section id="social-media">
-        <h2>Social Media Links</h2>
-        <ul>
-            <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
-            <li><a href="https://github.com/yourprofile">GitHub</a></li>
-            <li><a href="https://twitter.com/yourprofile">Twitter</a></li>
-        </ul>
-    </section>
+      </section>
+
+      <section id="proyectos" class="container section">
+        <h2>Proyectos destacados</h2>
+        <div class="project-grid">
+          <article class="card">
+            <h3>GestorCuentas</h3>
+            <p>
+              Aplicación para organizar ingresos y gastos con filtros por fecha,
+              categorías y balance mensual.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>TaskManager</h3>
+            <p>
+              Herramienta de productividad para crear tareas, establecer prioridades
+              y seguir el progreso diario.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>AlertasClimatológicas</h3>
+            <p>
+              Sistema de alertas meteorológicas con notificaciones por zonas y
+              avisos visuales de riesgo.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
     <footer>
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
+      <div class="container footer-content">
+        <p>© 2026 Alejandro. Hecho con HTML y CSS.</p>
+        <div class="footer-links">
+          <a href="https://github.com/Alegasu03" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/alejandro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://twitter.com/alejandro" target="_blank" rel="noopener noreferrer">Twitter/X</a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

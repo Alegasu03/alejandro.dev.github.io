@@ -1,35 +1,155 @@
-/* Custom CSS for Jekyll Cayman Theme Enhancement */
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #1d4ed8;
+  --primary-soft: #dbeafe;
+  --border: #e5e7eb;
+}
 
-/* Header Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(100% - 2rem, 960px);
+  margin-inline: auto;
+}
+
+.hero {
+  background: linear-gradient(120deg, #1d4ed8, #0f766e);
+  color: white;
+  padding: 4rem 0 3rem;
+}
+
+.badge {
+  margin: 0;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.9rem;
+}
+
 h1 {
-    color: #34495e;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0.8rem 0 0.2rem;
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
-/* Link Styles */
+.subtitle {
+  margin-top: 0;
+  color: #e5edff;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.quick-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.section {
+  margin-top: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.info-list li + li {
+  margin-top: 0.4rem;
+}
+
 a {
-    color: #2980b9;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
+  color: var(--primary);
 }
 
-/* Button Styles */
-.button {
-    background-color: #27ae60;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-.button:hover {
-    background-color: #1e7f35;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
 }
 
-/* Footer Styles */
-ffooter {
-    text-align: center;
-    padding: 20px;
-    background-color: #2c3e50;
-    color: white;
+.card {
+  background: #fbfdff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  padding: 1.2rem 0 2.3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-content p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .section {
+    margin-top: 1.2rem;
+  }
 }

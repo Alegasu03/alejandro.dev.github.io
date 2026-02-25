@@ -1,10 +1,33 @@
-# Additional Portfolio Configuration
+title: Alejandro's Portfolio
+description: A collection of my projects and work
+baseurl: "/"
+url: "https://alejandro.dev"
+github_username: "Alegasu03"
+image: "/assets/img/avatar.png"
+menu:
+  main:
+    - title: "Home"
+      url: "/"
+      external: false
+    - title: "Portfolio"
+      url: "/portfolio/"
+      external: false
+    - title: "About"
+      url: "/about/"
+      external: false
+    - title: "Contact"
+      url: "/contact/"
+      external: false
 
-portfolio:
-  title: "My Portfolio"
-  description: "Showcasing my projects and skills"
-  skills:
-    - "JavaScript"
-    - "Python"
-    - "React"
-    - "CSS"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Cayman theme settings
+theme: "Cayman"
